@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Monitoring App</title>
+</head>
+<body>
+  <h1>Health Monitoring App</h1>
+
+  <!-- Signup Form -->
+  <h2>Signup</h2>
+  <form id="signupForm">
+    <input type="email" id="signupEmail" placeholder="Email" required>
+    <input type="password" id="signupPassword" placeholder="Password" required>
+    <button type="submit">Signup</button>
+  </form>
+
+  <!-- Login Form -->
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="email" id="loginEmail" placeholder="Email" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- Add Reading Form -->
+  <h2>Add Health Reading</h2>
+  <form id="readingForm">
+    <input type="number" id="bloodSugar" placeholder="Blood Sugar" required>
+    <input type="number" id="bloodPressure" placeholder="Blood Pressure" required>
+    <button type="submit">Add Reading</button>
+  </form>
+
+  <!-- View Readings -->
+  <h2>Your Readings</h2>
+  <button id="viewReadingsBtn">View Readings</button>
+  <table border="1" id="readingsTable">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Blood Sugar</th>
+        <th>Blood Pressure</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Link external script -->
+  <script src="script.js"></script>
+</body>
+</html>
